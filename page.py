@@ -63,12 +63,18 @@ class SearchResultsPage(BasePage):
         townhouse_filter = self.driver.find_element(*SearchResultsPageLocators.TOWNHOUSE_FILTERS)
         sleep(1)
         townhouse_filter.click()
+        sleep(1)
 
     def click_next_btn(self):
         next_btn = self.driver.find_element(*SearchResultsPageLocators.NEXT_BTN)
         sleep(1)
         next_btn.click()
         sleep(2)
+
+    def click_house_filter(self):
+        house_filter = self.driver.find_element(*SearchResultsPageLocators.HOUSE_FILTER)
+        sleep(2)
+        house_filter.click()
 
     def next_btn(self):
         print(self.driver.find_elements(*SearchResultsPageLocators.NEXT_BTN))

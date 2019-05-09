@@ -13,3 +13,4 @@ class SearchResultsPageLocators(object):
     APPLY_FILTERS = (By.XPATH, '//*[contains(text(), "Apply Filters")]')
     KEY_DETAILS = (By.XPATH, "//div[@class='keyDetailsList']")
     NEXT_BTN = (By.XPATH, "//*[@data-rf-test-id='react-data-paginate-next']")
+    HOUSE_FILTER = (By.XPATH, '//*[@data-rf-test-name="uipt1"]')
