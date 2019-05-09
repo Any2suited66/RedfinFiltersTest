@@ -11,5 +11,5 @@ in their description.  I believe this is a bug, but I
 2. The house_filter_test also fails for the same reason as the townhouse_filter_test does.  Multiple 'Ready to build' properties
    are shown in the results.
    
-I wish I had more time to work on this and I probably will in my free time.  Thank you in advance for any feedback you provide,
+I wish I had more time to work on this and probably will in my free time.  Thank you in advance for any feedback you provide,
 it is much appreciated.  I am really trying to improve myself as a QA engineer.
