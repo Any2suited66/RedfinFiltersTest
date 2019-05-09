@@ -9,7 +9,7 @@ from locators import SearchResultsPageLocators
 class TestRunner(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome('/Users/tyler/PycharmProjects/RedFin/chromedriver')
+        self.driver = webdriver.Chrome('path/to/chromedriver')
         self.driver.get('https://www.redfin.com')
 
     def tearDown(self):
@@ -54,7 +54,7 @@ class TestRunner(unittest.TestCase):
 
                 except:
                     print('test failed, check manually')
-                    self.driver.get_screenshot_as_file('/Users/tyler/PycharmProjects/RedFin/failed_test.png')
+                    self.driver.get_screenshot_as_file('failed_test.png')
                     exit(1)
             try:
                 search_results_page.next_btn()
@@ -102,7 +102,7 @@ class TestRunner(unittest.TestCase):
 
                 except:
                     print('test failed, check manually')
-                    self.driver.get_screenshot_as_file('/Users/tyler/PycharmProjects/RedFin/failed_test.png')
+                    self.driver.get_screenshot_as_file('failed_test.png')
                     exit(1)
             try:
                 search_results_page.next_btn()
@@ -149,7 +149,7 @@ class TestRunner(unittest.TestCase):
 
                 except:
                     print('test failed, check manually')
-                    self.driver.get_screenshot_as_file('/Users/tyler/PycharmProjects/RedFin/failed_test.png')
+                    self.driver.get_screenshot_as_file('failed_test.png')
                     exit(1)
             try:
                 search_results_page.next_btn()
